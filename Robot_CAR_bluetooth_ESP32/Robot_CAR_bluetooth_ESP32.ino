@@ -23,7 +23,7 @@ delay(2000);
 
  Serial.begin(9600);
  //btSerial.begin(9600);
- SerialBT.begin("Patrickbot");
+ SerialBT.begin("nomedoseurobo");
  pinMode(pin1, OUTPUT);
  pinMode(pin2, OUTPUT);
  pinMode(pin3, OUTPUT);
