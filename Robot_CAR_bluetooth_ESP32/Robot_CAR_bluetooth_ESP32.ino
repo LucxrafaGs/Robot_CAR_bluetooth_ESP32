@@ -23,7 +23,7 @@ delay(2000);
 
  Serial.begin(9600);
  //btSerial.begin(9600);
- SerialBT.begin("nomedoseurobo");
+ SerialBT.begin("Patrickbot");
  pinMode(pin1, OUTPUT);
  pinMode(pin2, OUTPUT);
  pinMode(pin3, OUTPUT);
@@ -44,14 +44,14 @@ void loop() {
  digitalWrite(pin4, LOW);
  break;
  }
- case 'I': {//frente direita
+ case 'G': {//frente direita
  digitalWrite(pin1, HIGH);
  digitalWrite(pin2, LOW);
  digitalWrite(pin3, LOW);
  digitalWrite(pin4, HIGH);
  break;
  }
- case 'G': {//frente esquerda
+ case 'I': {//frente esquerda
  digitalWrite(pin1, LOW);
  digitalWrite(pin2, HIGH);
  digitalWrite(pin3, HIGH);
@@ -59,16 +59,16 @@ void loop() {
  break;
  }
  case 'R': {//direita
- digitalWrite(pin1, HIGH);
+ digitalWrite(pin1, LOW);
  digitalWrite(pin2, HIGH);
- digitalWrite(pin3, LOW);
+ digitalWrite(pin3, HIGH);
  digitalWrite(pin4, LOW);
  break;
  }
  case 'L': {//esquerda
- digitalWrite(pin1, LOW);
+ digitalWrite(pin1, HIGH);
  digitalWrite(pin2, LOW);
- digitalWrite(pin3, HIGH);
+ digitalWrite(pin3, LOW);
  digitalWrite(pin4, HIGH);
  break;
  }
